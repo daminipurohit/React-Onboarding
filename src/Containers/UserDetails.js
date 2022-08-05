@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from "react";
+import { func } from 'prop-types';
+ 
 import Card from "../Components/Card";
 import Input from "../Components/Input";
 import Label from "../Components/Label";
@@ -64,5 +66,8 @@ import { UserDetailsStyled,
     </Card>
   )
   }
+  UserDetails.propTypes = {
+    updateStep: func.isRequired,
+  };
 
   export default UserDetails;

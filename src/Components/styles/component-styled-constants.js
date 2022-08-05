@@ -161,18 +161,18 @@ font-size: 0.6rem;
 const CheckmarkStemStyled = styled.div`
 position: absolute;
 width:3px;
-height:22px;
+height:21px;
 background-color:#fff;
 left:15px;
-top:-14px;
+top:-12px;
 `;
 const CheckmarkKickStyled = styled.div`
 position: absolute;
-width:11px;
+width:9px;
 height:3px;
 background-color:#fff;
-left:6px;
-top:5px;
+left:8px;
+top:-2px;
 `;
 
 const CheckmarkStyled = styled.div`

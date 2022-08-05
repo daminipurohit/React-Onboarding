@@ -1,4 +1,5 @@
 import React from "react";
+import { string } from 'prop-types';
 import {FlexContainerStyled,LabelStyled,SubLabelStyled} from './styles/component-styled-constants';
 
 const Label = ({label, subLabel=''}) => {
@@ -9,5 +10,10 @@ const Label = ({label, subLabel=''}) => {
         </FlexContainerStyled>
     </>
 }
+
+Label.propTypes = {
+    label: string.isRequired,
+    subLabel: string
+  };
 
 export default Label;

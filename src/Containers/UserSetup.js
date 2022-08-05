@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { func } from 'prop-types';
+
 import Card from "../Components/Card";
 import { UserSetupStyled, FlexContainerStyled } from './styles/container-styled-constants';
 import BriefCard from "../Components/BriefCard";
@@ -37,5 +39,9 @@ import Button from "../Components/Button";
   </Card>
   )
   }
+
+  UserSetup.propTypes = {
+    updateStep: func.isRequired,
+  };
 
   export default UserSetup

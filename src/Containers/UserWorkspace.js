@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import { func } from 'prop-types';
+
 import { UserWorkspaceStyledStyled, InputWrapperStyled,UrlWrapperStyled,
   ErrorLabelStyled,
     } from './styles/container-styled-constants';
@@ -64,5 +66,8 @@ import Button from '../Components/Button';
   </UserWorkspaceStyledStyled>
   </Card>)
   }
+  UserWorkspace.propTypes = {
+    updateStep: func.isRequired,
+  };
 
   export default UserWorkspace;

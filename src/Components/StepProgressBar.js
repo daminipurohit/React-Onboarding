@@ -1,4 +1,5 @@
 import React from "react";
+import { array, number } from 'prop-types';
 import  { FlexContainerStyled, CircleStyled, DashStyled } from './styles/component-styled-constants';
 
 export const Circle = props => {
@@ -20,5 +21,10 @@ const StepProgressBar = ({steps, activeCount}) => {
         </React.Fragment>)
     })
 }
+
+StepProgressBar.propTypes = {
+    steps: array.isRequired,
+    activeCount: number
+  };
 
 export default StepProgressBar;

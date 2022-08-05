@@ -8,8 +8,6 @@ import UserSetup from './UserSetup';
 import OnboardCompletion from './OnboardCompletion';
 import {OnboardingStyled, StepViewStyled} from './styles/container-styled-constants';
 
-
-
 const Onboarding = () => {
 const [steps] = useState([{
     key: 'screen-1',

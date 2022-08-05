@@ -36,8 +36,10 @@ div {
     margin-top: 1rem
 }
 div:nth-child(2){
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
     label {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 }
 div:nth-child(3){
