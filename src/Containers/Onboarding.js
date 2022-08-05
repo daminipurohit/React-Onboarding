@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import StepViewer from './StepViewer';
-import ClientLogo from '../images/ClientLogo.png';
+import clientLogo from '../images/clientLogo.png';
 import Info from '../Components/Info';
 import UserDetails from './UserDetails';
 import UserWorkspace from './UserWorkspace';
@@ -40,7 +40,7 @@ const updateOutput = ({data, step}) => {
 }
     return(
             <OnboardingStyled> 
-                <Info icon={ClientLogo} title="Eden" />
+                <Info icon={clientLogo} title="Eden" />
                 <StepViewStyled>
                 <StepViewer steps={steps} updateOutput={updateOutput} stepsOutput={stepsOutput} />
                 </StepViewStyled>
