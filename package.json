@@ -1,4 +1,5 @@
 {
+  "homepage":"http://daminipurohit.github.io/react-onboarding",
   "name": "react-onboarding",
   "version": "1.0.0",
   "description": "A React web application created from scratch using React 18, Webpack 5 and Babel 7",
@@ -7,7 +8,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development --port 4000 --compress",
     "build": "webpack --mode production --progress",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy":"nom run build",
+    "deploy":"gh-pages -d dist"
   },
   "author": "Damini Purohit",
   "license": "ISC",
@@ -29,6 +32,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.6.1",
