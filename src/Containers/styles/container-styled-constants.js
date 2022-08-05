@@ -26,7 +26,12 @@ margin: 0 10%;
 const UserWorkspaceStyledStyled = styled.div`
 max-width: 20rem;
 `;
-const UserSetupStyled = styled(UserDetailsStyled)``;
+const UserSetupStyled = styled(UserDetailsStyled)`
+div:first-child{
+    @media (max-width: 850px) {
+          flex-direction: column;
+}
+`;
 
 const OnboardCompletionStyled = styled(FlexContainerStyled)`
 flex-direction:column;
