@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --open --hot --mode development --port 4000 --compress",
     "build": "webpack --mode production --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy":"nom run build",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d dist"
   },
   "author": "Damini Purohit",
